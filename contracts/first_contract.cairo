@@ -8,7 +8,7 @@ func balance() -> (res : felt):
 end
 
 @external
-func increase_balance{
+func decrease_balance{
         syscall_ptr : felt*, pedersen_ptr : HashBuiltin*,
         range_check_ptr}(amount : felt):
     let (res) = balance.read()
